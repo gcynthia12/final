@@ -1,1 +1,29 @@
+#wrapper{
+    display: grid;
+    width: 124vh;
+    grid-template-columns: auto auto auto auto;
+    row-gap: 4vh;
+    column-gap: 4vh;
+    padding: 4vh;
+    margin: 0 auto;
+}
 
+.intro{
+    background-color: blue;
+    grid-column: 1/3;
+    grid-row: 1/3;
+    width: 60vh;
+    height: 60vh;
+}
+
+.assignment{
+    background-color: purple;
+    width: 28vh;
+    height: 28vh;
+}
+
+.readings{
+    background-color: green;
+    width: 28vh;
+    height: 28vh;
+}
