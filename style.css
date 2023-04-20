@@ -1,3 +1,7 @@
+html, body{
+    font-family: Courier, monospace;
+}
+
 #wrapper{
     display: grid;
     width: 124vh;
@@ -8,22 +12,112 @@
     margin: 0 auto;
 }
 
+img{
+    height: 28vh;
+}
+
+p{
+    font-size: 12pt;
+}
+
+
 .intro{
-    background-color: blue;
     grid-column: 1/3;
     grid-row: 1/3;
     width: 60vh;
     height: 60vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 3px 3px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .assignment{
-    background-color: purple;
     width: 28vh;
     height: 28vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 3px 3px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .readings{
-    background-color: green;
     width: 28vh;
     height: 28vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 3px 3px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.title{
+    position: absolute;
+    width: fit-content;
+}
+
+.intro:before{
+    content: "";
+    width: 60vh;
+    height: 60vh;
+    position: absolute;
+    background: rgba(186, 238, 251, 0.9);
+}
+
+/* .intro:hover{
+    box-shadow: none;
+}
+
+.intro:hover::before{
+    opacity: 0;
+}
+
+.intro:hover h1{
+    opacity: 0;
+}
+
+.intro:hover h2{
+    opacity: 0;
+} */
+
+.assignment:before{
+    content: "";
+    width: 28vh;
+    height: 28vh;
+    position: absolute;
+    background: rgba(228, 186, 251, 0.9);
+}
+
+.assignment:hover{
+    box-shadow: none;
+}
+
+.assignment:hover::before{
+    opacity: 0;
+}
+
+.assignment:hover > p{
+    opacity: 0;
+}
+
+.readings:before{
+    content: "";
+    width: 28vh;
+    height: 28vh;
+    position: absolute;
+    background: rgba(216, 253, 184, 0.85);
+}
+
+.readings:hover{
+    box-shadow: none;
+}
+
+.readings:hover::before{
+    opacity: 0;
+}
+
+.readings:hover > p{
+    opacity: 0;
 }
